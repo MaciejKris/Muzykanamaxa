@@ -1,0 +1,91 @@
+      body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #282c35; /* Kolor tła strony */
+            color: #fff; /* Kolor tekstu */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ustaw wysokość na co najmniej 100% widoku okna przeglądarki */
+        }
+
+        header {
+            color: #ffd700; /* Kolor tekstu nagłówka */
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffd700; /* Złoty kolor tła menu */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Ramka z przezroczystym cieniem */
+            border-radius: 8px; /* Zakrąglenie rogów */
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Cień */
+        }
+
+        nav a {
+            color: #000; /* Kolor tekstu w menu */
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+       .audio-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2); /* Przezroczyste tło */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Ramka z przezroczystym cieniem */
+        border-radius: 8px; /* Zakrąglenie rogów */
+        padding: 20px;
+        margin: 20px 10px; /* Margines poziomy między divami */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Cień */
+        max-width: calc(33.33% - 20px); /* Szerokość 33.33% z marginesem 10px po obu stronach */
+        width: 30%;
+    }
+
+    .audio-section img {
+        max-width: 100%;
+        border-radius: 8px; /* Zakrąglenie rogów obrazu */
+        margin-bottom: 10px;
+    }
+
+    audio {
+        width: 80%;
+    }
+
+    .audio-container {
+		width:100%;
+		height:40vh;
+        display: flex;
+        flex-wrap: wrap; /* Nowa linia po 3 divy w wierszu */
+        justify-content: space-evenly; /* Równa przestrzeń między divami */
+    }
+
+        .falling-text {
+            animation: fall 2s ease-in-out; /* Animacja trwająca 2 sekundy z efektem ease-in-out */
+        }
+
+        @keyframes fall {
+            from {
+                transform: translateY(-100vh); /* Początkowe położenie poza górnym krawędzią widoku */
+            }
+            to {
+                transform: translateY(0); /* Końcowe położenie na początkowej pozycji */
+            }
+        }
+		p{
+			margin:auto;
+            }
+			  footer {
+            background-color: #ffd700; /* Złotawy kolor tła stopki */
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Cień w dół */
+			width:100%;
+        }

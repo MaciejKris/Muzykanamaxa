@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="playlisty.css">
+    <title>Sklep Muzyczny - Twoje Playlisty</title>
+	  <script>
+	   function resetAudio(audioElement) {
+            audioElement.currentTime = 0;
+            audioElement.pause();
+        }
+        function resetAudio(audioElement) {
+            audioElement.currentTime = 0;
+            audioElement.pause();
+        document.addEventListener('DOMContentLoaded', () => {
+    const songTitleInput = document.getElementById('song-title');
+    const livePreviewContainer = document.getElementById('live-preview-container');
+    const audioPreview = new Audio();
+
+    songTitleInput.addEventListener('input', () => {
+        const livePreviewText = songTitleInput.value;
+        livePreviewContainer.textContent = livePreviewText;
+
+        // Dodaj kod do odtwarzania utworu w czasie rzeczywistym
+        // Tutaj możesz użyć Web Audio API lub innych bibliotek do odtwarzania dźwięku w czasie rzeczywistym.
+    });
+	
+
+    const addToPlaylistForm = document.getElementById('add-to-playlist-form');
+    addToPlaylistForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const selectedPlaylistId = playlistSelect.value;
+        const songTitle = songTitleInput.value;
+
+        if (!songTitle) {
+            alert('Podaj tytuł utworu.');
+            return;
+        }
+
+        // Wyślij żądanie POST do backendu
+        await fetch('/api/playlist', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ playlistId: selectedPlaylistId, title: songTitle }),
+        });
+
+        alert(`Dodano "${songTitle}" do playlisty.`);
+    });
+});
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" style="max-width: 100px; height: auto; float: left;">
+        <h1>Twoje Playlisty</h1>
+    </header>
+
+    <nav>
+        <a href="#">MuzykanaMaxa</a>
+        <a href="#">Ustawienia</a>
+        <a href="#">Logowanie</a>
+        <a href="#">Rejestracja</a>
+        <a href="index.html">Strona Główna</a> <!-- Przejście z powrotem do strony głównej -->
+    </nav>
+
+    <main>
+        <h2>Twoje Playlisty</h2>
+        <ul id="playlist-list">
+            <!-- Playlist items will be added dynamically -->
+        </ul>
+
+        <h2>Dodaj do Playlisty</h2>
+        <form id="add-to-playlist-form">
+            <label for="playlist-select">Wybierz playlistę:</label>
+            <select id="playlist-select"></select>
+
+            <label for="song-title">Tytuł utworu:</label>
+            <input type="text" id="song-title" required>
+
+            <button type="submit">Dodaj do playlisty</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 🔥MuzykanaMaxa🔥
+    </footer>
+	</body>
+	</html>

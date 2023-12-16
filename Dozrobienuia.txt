@@ -1,0 +1,13 @@
+Strona Główna:
+-odtwarzacz 
+-lepsze menu gorne
+-mozliwosc stworzenia playlisty
+-w mueny gornym zrobic te ustwienia:
+1.mozliwosc zmiany awatray
+2.mozliwosc zmiany hasla loginu nazwy naziwska..
+3.tyle
+-dodac guzik do dodawania wlasnych pisoenek na strone
+-mozliwosc dodania playlist wlasnej i dodawanie muzyki do playlist
+Playlisty:
+-dodawanie muzyki
+-uzywanie inncyh palylist
