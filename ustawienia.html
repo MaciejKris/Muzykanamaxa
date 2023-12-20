@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ustawienia.css">
+    <title>Ustawienia</title>
+	
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+            <h1>Ustawienia</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo-container">
+            <img src="user-icon.png" alt="User Icon">
+            <a href="#">MuzykanaMaxa</a>
+        </div>
+        <div class="user-icon">
+            <img src="user-icon.png" alt="User Icon">
+            <a href="ustawienia.html">Ustawienia</a>
+        </div>
+    </nav>
+
+    <form action="upload_avatar.php" method="post" enctype="multipart/form-data">
+        <label for="avatar">Wybierz nowy awatar:</label>
+        <input type="file" name="avatar" id="avatar" accept="image/*">
+        <input type="submit" value="Zapisz zmiany">
+    </form>
+
+    <footer>
+        &copy; 🔥MuzykanaMaxa🔥
+    </footer>
+</body>
+</html>

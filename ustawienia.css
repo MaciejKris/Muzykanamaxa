@@ -1,0 +1,79 @@
+     body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #282c35; /* Kolor tła strony */
+            color: #fff; /* Kolor tekstu */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ustaw wysokość na co najmniej 100% widoku okna przeglądarki */
+        }
+
+        header {
+            color: #ffd700; /* Kolor tekstu nagłówka */
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; /* Zmiana na space-between */
+            background-color: #ffd700; /* Złoty kolor tła menu */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Ramka z przezroczystym cieniem */
+            border-radius: 8px; /* Zakrąglenie rogów */
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Cień */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            max-width: 100px; /* Maksymalna szerokość logo */
+            height: auto; /* Automatyczna wysokość proporcjonalna do szerokości */
+            margin-right: 20px; /* Dodatkowy odstęp od prawej strony */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.2); /* Przezroczyste tło formularza */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Ramka z przezroczystym cieniem */
+            border-radius: 8px; /* Zakrąglenie rogów */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Cień */
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            background-color: #ffd700;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .audio-container {
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            flex-wrap: wrap; /* Nowa linia po 3 divy w wierszu */
+            justify-content: space-evenly; /* Równa przestrzeń między divami */
+        }
+		 footer {
+            background-color:yellow;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+			color:#333;
+        }
