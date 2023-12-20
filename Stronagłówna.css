@@ -226,4 +226,15 @@
       color: yellow; /* Kolor tekstu po najechaniu myszą */
     }
 	
+	input[type="submit"]{
+	  background-color:#333333;
+      color:#FFD700;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      opacity: 0;
+      animation: fadeInButton 1s ease-in-out forwards;
+	  max-width:30%;
+	}
 	

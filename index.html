@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="Stronagłownataprawdiwa.css">
+    <title>Sklep Muzyczny</title>
+	<script>
+        function resetAudio(audioElement) {
+            audioElement.currentTime = 0;
+            audioElement.pause();
+        }
+        function resetAudio(audioElement) {
+            audioElement.currentTime = 0;
+            audioElement.pause();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+            <h1>Strona Główna</h1>
+			 <div class="user-icon">
+            <a href="ustawienia.html"><img src="awatar.png" alt="Avatar" class="avatar"></a>
+        </div>
+        </div>
+    </header>
+    <nav>
+        <a href="#">MuzykanaMaxa</a>
+        <a href="#">Ustawienia</a>
+        <a href="Logowanie.html">Logowanie</a>
+        <a href="Rejestracja.html">Rejestracja</a>
+        <a href="#">Playlisty</a>
+    </nav>
+        <h1 class="falling-text">Witaj na stronie głównej!</h1>
+	</p>
+        <h1>Tutaj Znajdziesz Najpopularniejsze utwory i najpopularniejszych wykonawcow.</h1>
+ <div class="audio-container">
+    <div class="audio-section">
+        <img src="im'good.jpg" alt="Opis obrazu">
+        <h2>I'm Good -David Guetta & Bebe Rexha </h2>
+		  <button onclick="addToPlaylist('I\'m Good - David Guetta & Bebe Rexha')">Add to Playlist</button>
+         <audio controls onended="resetAudio(this)">
+            <source src="I'm Good.mp3" type="audio/mp3">
+			 
+        </audio>
+    </div>
+	<div class="audio-section">
+        <img src="rapgod.jpg" style="width:685px;height:388px; alt="Opis obrazu">
+        <h2>Rap God-Eminem </h2>
+        <audio controls onended="resetAudio(this)">
+            <source src="Rapgod.mp3" type="audio/mp3">
+        </audio>
+    </div>
+	<div class="audio-section">
+        <img src="diamonds.jpg"  style="width:685px;height:388px; alt="Opis obrazu">
+        <h2>Diamonds-Rihanna </h2>
+         <audio controls onended="resetAudio(this)">
+            <source src="Rihanna_-_Diamonds.mp3" type="audio/mp3">
+        </audio>
+    </div>
+	<div class="audio-container">
+
+ <div class="audio-container">
+    <div class="audio-section">
+        <img src="jol.png" alt="Opis obrazu">
+        <h2>Sigma-Song </h2>
+        <audio controls onended="resetAudio(this)">
+            <source src="liqwyd-call-me(chosic.com).mp3" type="audio/mp3">
+        </audio>
+    </div>
+	<div class="audio-section">
+        <img src="cosik.png" alt="Opis obrazu">
+        <h2>Traitor-Olivia Rodrigo </h2>
+         <audio controls onended="resetAudio(this)">
+            <source src="Olivia_Rodrigo_-_traitor.mp3" type="audio/mp3">
+        </audio>
+    </div>
+	<div class="audio-section">
+        <img src="a362273509f7eccdcf362bb73b3b006d.png" alt="Opis obrazu">
+        <h2>
+				Loneliness of the Winner</h2>
+         <audio controls onended="resetAudio(this)">
+            <source src="loneliness-of-the-winner-110416.mp3" type="audio/mp3">
+        </audio>
+		</div>
+    <footer>
+        &copy; 🔥MuzykanaMaxa🔥
+    </footer>
+</body>
+</html>

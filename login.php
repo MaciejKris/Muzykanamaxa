@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($haslo, $hashed_password)) {
             // Zalogowano pomyślnie
             $_SESSION["user_id"] = $row["id"];
-            header("Location: dashboard.php");
+            header("Location: index.html");
             exit();
         } else {
             echo "Nieprawidłowa nazwa użytkownika lub hasło.";
